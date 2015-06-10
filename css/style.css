@@ -8,6 +8,12 @@ h1{
 figure{
     margin: auto;
 }
+.content{
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    margin-bottom: 400px;
+}
 .content article{
     padding: 100px 0;
     max-width: 640px;
@@ -16,6 +22,10 @@ figure{
 }
 img{
     max-width: 100%;
+}
+@font-face {
+    font-family: Autograf;
+    src: url('../fonts/Autograf_PersonalUseOnly.ttf');
 }
 
 /* Header Parallax */
@@ -28,6 +38,7 @@ img{
     background-size: auto 600px;
     background-attachment: fixed;
     overflow: hidden;
+    z-index: 3;
 }
 .logo{
     height:200px;
@@ -107,6 +118,7 @@ img{
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top:80px;
+    margin-bottom: 80px;
     border-radius: 50%;
     position: relative;
 }
@@ -129,5 +141,29 @@ img{
 }
 .large-window .promo-text strong{
     display: block;
+    font-size: 30px;
+}
+
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer .footer-stuff{
+    max-width: 640px;
+    margin: 0 auto;
+
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.signature{
+    font-family: "Autograf", sans-serif;
     font-size: 30px;
 }
