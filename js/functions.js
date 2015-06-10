@@ -14,7 +14,7 @@ $(window).scroll(function(){
         'transform' : 'translate(0px, -'+ ws / 20 +"%)"
     });
 
-    if(ws > $('.meat-pics').offset().top - ($(window).height()/1.2)){
+    if(ws > $('.meat-pics').offset().top - ($(window).height()/1.4)){
 
         $('.meat-pics figure').each(function(i){
 

@@ -1,6 +1,5 @@
 body{
     font-family: "Open Sans", sans-serif;
-    background-color: #F1F1F1;
 }
 h1{
     color:#ccc;
@@ -72,4 +71,14 @@ img{
 .meat-pics figure.is-showing{
     opacity: 1;
     transform: translateX(0px);
+}
+/* Periscope */
+.large-window{
+    height: 640px;
+    background-image: url("../images/burger.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top:50px;
+    border-radius: 50%;
 }
