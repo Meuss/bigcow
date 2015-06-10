@@ -1,5 +1,6 @@
 body{
     font-family: "Open Sans", sans-serif;
+    background-color: #F1F1F1;
 }
 h1{
     color:#ccc;
@@ -42,13 +43,12 @@ img{
 .cow{
     width: 960px;
     height:411px;
-    background-color: transparentize(pink, 0.4);
     background-image: url("../images/cow.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     position: absolute;
     left: 50%;
-    margin-left: -480px;
+    margin-left: -360px;
     top: 380px;
 }
 .back-bird{
@@ -60,4 +60,16 @@ img{
     position: absolute;
     left: 50%;
     margin-left: -480px;
+}
+/* Grid pics*/
+.meat-pics figure{
+    margin: 6px 10px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+}
+.meat-pics figure.is-showing{
+    opacity: 1;
+    transform: translateX(0px);
 }
