@@ -25,4 +25,12 @@ $(window).scroll(function(){
 
         });
     }
+    if(ws > $('.large-window').offset().top - $(window).height()){
+        $('.large-window').css({'background-position':'center '+ (ws - $('.large-window').offset().top) +'px'});
+
+        var opacity = (ws - $('.large-window').offset().top + 400) / (ws /7);
+
+        $('.window-tint').css({'opacity': opacity});
+
+    }
 });

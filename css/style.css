@@ -103,9 +103,31 @@ img{
 .large-window{
     height: 640px;
     background-image: url("../images/burger.jpg");
-    background-position: top center;
+    background-position: center 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top:50px;
+    margin-top:80px;
     border-radius: 50%;
+    position: relative;
+}
+.large-window .window-tint{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+.large-window .promo-text{
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+.large-window .promo-text strong{
+    display: block;
+    font-size: 30px;
 }
