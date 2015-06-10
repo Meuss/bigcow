@@ -18,7 +18,7 @@ img{
     max-width: 100%;
 }
 
-/* Parallax */
+/* Header Parallax */
 .cow-box{
     position: relative;
     width: auto;
@@ -60,18 +60,45 @@ img{
     left: 50%;
     margin-left: -480px;
 }
-/* Grid pics*/
-.meat-pics figure{
+/* Grid pics and animations*/
+
+.meat-pics {
+    margin-bottom: 100px; }
+
+.meat-pics figure {
     margin: 6px 10px;
     position: relative;
     opacity: 0;
     transform: translateX(20px);
     transition: all 0.3s ease-in-out;
-}
-.meat-pics figure.is-showing{
+    overflow: hidden;
+    cursor: pointer; }
+
+.meat-pics figure.is-showing {
     opacity: 1;
-    transform: translateX(0px);
-}
+    transform: translateX(0px); }
+
+.meat-pics figure img {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out; }
+
+.meat-pics figure:hover figcaption {
+    left: 0%; }
+
+.meat-pics figure:hover img {
+    transform: scale(1.1); }
+
+.meat-pics figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out; }
+
 /* Periscope */
 .large-window{
     height: 640px;
