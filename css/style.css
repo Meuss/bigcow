@@ -1,0 +1,63 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    color:#ccc;
+    weight: 300;
+}
+figure{
+    margin: auto;
+}
+.content article{
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+
+/* Parallax */
+.cow-box{
+    position: relative;
+    width: auto;
+    height: 600px;
+    background-image: url("../images/moutains_bg.jpg");
+    background-position: top center;
+    background-size: auto 600px;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.logo{
+    height:200px;
+    width: 100%;
+    background-image: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+}
+.cow{
+    width: 960px;
+    height:411px;
+    background-color: transparentize(pink, 0.4);
+    background-image: url("../images/cow.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top: 380px;
+}
+.back-bird{
+    width: 960px;
+    height: 298px;
+    background-image: url("../images/back-bird.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+}
